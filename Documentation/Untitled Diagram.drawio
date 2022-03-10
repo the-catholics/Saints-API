@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-10T19:03:06.426Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="WCR6C37xFrGsMlaRB-R_" version="16.6.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-03-10T19:04:39.402Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="yCvwHDGM6RslygdtvtFy" version="16.6.2" type="github" pages="2">
   <diagram id="h0MsrK-2JFyUIf3MIKAJ" name="Conceptual Model">
     <mxGraphModel dx="1231" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -179,6 +179,9 @@
         </mxCell>
         <mxCell id="MW6F4Lx1zgNoKZuFLcjc-1" value="Local Visitado" style="html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="440" y="310" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iMh951KexmDH4gEw37sX-1" value="Relato" style="html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
