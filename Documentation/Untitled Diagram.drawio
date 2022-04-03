@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-03T11:40:16.457Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="ZAcPuZALjU_RnYnCIbM6" version="17.4.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-04-03T11:42:25.363Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="v25TX4QIQ1JZyxffZg0L" version="17.4.0" type="github" pages="2">
   <diagram id="h0MsrK-2JFyUIf3MIKAJ" name="Conceptual Model">
-    <mxGraphModel dx="1326" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1916" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -215,7 +215,7 @@
           <mxGeometry x="40" y="240" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Ab_cbhQshiljGBAYuwJN-2" value="Administrador" style="html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="560" y="150" width="110" height="50" as="geometry" />
+          <mxGeometry x="900" y="80" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="UJ-iUM1JjCyvyGZzhm0V-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#0050ef;strokeColor=#001DBC;" parent="1" source="ISTY2EK76z78JMbNoTIe-1" target="4OBSFwVaOLNX---eHjqS-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -255,7 +255,7 @@
           <mxGeometry x="720" y="80" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="4OBSFwVaOLNX---eHjqS-1" value="DataLanguage" style="html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="920" y="520" width="110" height="50" as="geometry" />
+          <mxGeometry x="870" y="560" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="fsZ0Yt7iT6EyY1d5_DvW-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gCjg-AKGwegKSNh6DbuU-1" target="fsZ0Yt7iT6EyY1d5_DvW-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -322,7 +322,7 @@
           <mxGeometry x="1330" y="135" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="nziRW6jfFaKaj0lCC0SB-6" value="Proof" style="html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="370" y="150" width="110" height="50" as="geometry" />
+          <mxGeometry x="900" y="160" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="bbXu6dDoiZB6X36XFB65-1" value="APIElement" style="html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="720" y="240" width="110" height="50" as="geometry" />
