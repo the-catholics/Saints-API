@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-05T14:22:23.835Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36" etag="PGEdIbqXj2wztFzskh_w" version="19.0.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-06-05T14:26:24.764Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36" etag="u61aAgg_IqBmiUBFZOvs" version="19.0.0" type="github" pages="2">
   <diagram id="h0MsrK-2JFyUIf3MIKAJ" name="Conceptual Model">
     <mxGraphModel dx="1712" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -380,7 +380,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="s0OKZWBq3BD55LSpzl81" name="ClassDiagram">
-    <mxGraphModel dx="522" dy="300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4310" dy="2475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="i770FoSl32qIDSlJSuP9-0" />
         <mxCell id="i770FoSl32qIDSlJSuP9-1" parent="i770FoSl32qIDSlJSuP9-0" />
@@ -775,28 +775,7 @@
           <mxGeometry x="80" y="3600" width="580" height="510" as="geometry" />
         </mxCell>
         <mxCell id="3Z6brV3u3WYfHr0Phxgi-0" value="&lt;h1&gt;Location&lt;/h1&gt;&lt;div&gt;É a entidade que representa as palavras de autoria de um santo.&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Title - &lt;/b&gt;&lt;i&gt;(campo obrigatório) &lt;/i&gt;É a palavra proferida por um santo.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Description - &lt;/b&gt;Descriçao da localização, Limitado em XXX caracteres.&lt;/li&gt;&lt;li&gt;&lt;b&gt;History -&lt;/b&gt;&amp;nbsp;Historia da localização, é importante enfatizar as alterações politicas globais que acontecem ao decorrer da História.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Latitude - &lt;/b&gt;&lt;i&gt;(campo obrigatório) &lt;/i&gt;Latitude no geo referenciamento&lt;/li&gt;&lt;li&gt;&lt;b&gt;Longitude -&lt;/b&gt;&amp;nbsp;&lt;i&gt;(campo obrigatório)&amp;nbsp;&lt;/i&gt;Longitude no geo referenciamento&lt;/li&gt;&lt;li&gt;&lt;b&gt;DataLanguage &lt;/b&gt;&lt;span&gt;representa o idioma em que foram escritas as informações do registro. &lt;/span&gt;&lt;i&gt;(é um relacionamento 1 ... 1 com a tabela DataLanguage)&lt;/i&gt;&lt;span&gt;.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="i770FoSl32qIDSlJSuP9-1">
-          <mxGeometry x="990" y="3540" width="580" height="320" as="geometry" />
-        </mxCell>
-        <mxCell id="3Z6brV3u3WYfHr0Phxgi-9" value="Location" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d79b00;" vertex="1" parent="i770FoSl32qIDSlJSuP9-1">
-          <mxGeometry x="1580" y="3560" width="210" height="182" as="geometry" />
-        </mxCell>
-        <mxCell id="3Z6brV3u3WYfHr0Phxgi-10" value="+ title: String" style="text;strokeColor=#6D1F00;fillColor=#a0522d;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" vertex="1" parent="3Z6brV3u3WYfHr0Phxgi-9">
-          <mxGeometry y="26" width="210" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="3Z6brV3u3WYfHr0Phxgi-11" value="+ description: String" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3Z6brV3u3WYfHr0Phxgi-9">
-          <mxGeometry y="52" width="210" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="3Z6brV3u3WYfHr0Phxgi-12" value="+ history: String" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3Z6brV3u3WYfHr0Phxgi-9">
-          <mxGeometry y="78" width="210" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="3Z6brV3u3WYfHr0Phxgi-13" value="+ dataLanguage: DataLanguage" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3Z6brV3u3WYfHr0Phxgi-9">
-          <mxGeometry y="104" width="210" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="3Z6brV3u3WYfHr0Phxgi-14" value="+ latitude: Double" style="text;strokeColor=#6D1F00;fillColor=#a0522d;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" vertex="1" parent="3Z6brV3u3WYfHr0Phxgi-9">
-          <mxGeometry y="130" width="210" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="3Z6brV3u3WYfHr0Phxgi-15" value="+ longitude: Double" style="text;strokeColor=#6D1F00;fillColor=#a0522d;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" vertex="1" parent="3Z6brV3u3WYfHr0Phxgi-9">
-          <mxGeometry y="156" width="210" height="26" as="geometry" />
+          <mxGeometry x="900" y="3540" width="580" height="320" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
