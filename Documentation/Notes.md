@@ -1,4 +1,4 @@
-## Entities Description
+|## Entities Description
 
 ### Language
 It is about in what language a register was created, when the data was inserted in the table.
