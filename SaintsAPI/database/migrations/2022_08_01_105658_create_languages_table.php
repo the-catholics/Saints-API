@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('languages', function (Blueprint $table) {
             $table->id();
-            $table->text('constant_number');
-            $table->text('constant_name');
+            $table->text('constant_number')->unique();
+            $table->text('constant_name')->unique();
             $table->timestamps();
         });
     }

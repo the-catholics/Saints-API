@@ -187,8 +187,14 @@ In represents a spoken tradional history about the saint or work
 - HistoricTime
 - Language
 
-##### aqui abaixo as tabelas pivot
+## Pivot Tables
 
+- Saints - Locations
+- Saints - Works
+- Saints - Artifacts
+- Works - Artifacts
+- Works - Locations
+- Accounts - Locations
 
 ## Non functional requiriments
 - Constants must have the language initials attached to the end.
