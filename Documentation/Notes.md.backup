@@ -194,9 +194,18 @@ In represents a spoken tradional history about the saint or work
 - Saints - Artifacts
 - Works - Artifacts
 - Works - Locations
-- 
+- Accounts - Locations
 
 ## Non functional requiriments
 - Constants must have the language initials attached to the end.
 - Historic date should have at least one attribute despite description.
 - Historic time should have at least one attribute despite description.
+
+
+
+
+# Implemented So Far
+
+- Language Crud
+- ArtifactType Crud
+- LinkTyu

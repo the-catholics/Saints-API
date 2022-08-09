@@ -200,3 +200,13 @@ In represents a spoken tradional history about the saint or work
 - Constants must have the language initials attached to the end.
 - Historic date should have at least one attribute despite description.
 - Historic time should have at least one attribute despite description.
+
+
+
+
+# Implemented So Far
+
+- Language Crud
+- ArtifactType Crud
+- LinkType Crud
+- Merit Crud

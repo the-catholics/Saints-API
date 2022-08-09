@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class LinkType extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'constant_number',
+        'constant_name'
+    ];
 }

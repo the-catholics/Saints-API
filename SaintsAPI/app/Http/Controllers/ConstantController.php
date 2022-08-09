@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Language;
 use App\Models\Merit;
+use App\Models\ArtifactType;
+use App\Models\LinkType;
 use Carbon\Exceptions\Exception;
 
 
@@ -132,6 +134,142 @@ class ConstantController extends Controller
             Merit::findOrFail($id)->delete();
             $response = [
                 'message' => 'The merit was deleted successfully'
+            ];
+            return response()->json($response, 200);
+        } catch (\Throwable $th) {
+            $response = [
+                "message" => "Something goes wrong",
+                "details" => $th
+            ];
+            return response()->json($response, 500);
+        }
+    }
+
+
+    // ARTIFACT TYPE
+    public function storeArtifactType(Request $request)
+    {
+        try {
+            $fields = $request->validate([
+                'constant_number' => 'required',
+                'constant_name' => 'required'
+            ]);
+
+            ArtifactType::create($fields);
+
+            $response = ["message" => "The ArtifactType Was Added Successfully"];
+            return response($response, 201);
+        } catch (\Throwable $exception) {
+            $response = [
+                "message" => "Something goes wrong",
+                "detais" => $exception
+            ];
+            return response($response, 500);
+        }
+    }
+
+    public function indexArtifactType()
+    {
+        try {
+            $types = ArtifactType::all();
+            return response()->json($types, 200);
+        } catch (\Throwable $exception) {
+            $response = [
+                'message' => "something goes wrong",
+                'details' => $exception
+            ];
+            return response()->json($response, 500);
+        }
+    }
+
+    public function showArtifactType($id)
+    {
+        try {
+            $type = ArtifactType::findOrFail($id);
+            return response()->json($type, 200);
+        } catch (\Throwable $exception) {
+            $response = [
+                'message' => 'something goes wrong',
+                'details' => $exception
+            ];
+            return response()->json($response, 500);
+        }
+    }
+
+    public function destroyArtifactType($id)
+    {
+        try {
+            ArtifactType::findOrFail($id)->delete();
+            $response = [
+                'message' => 'The artifact type was deleted successfully'
+            ];
+            return response()->json($response, 200);
+        } catch (\Throwable $th) {
+            $response = [
+                "message" => "Something goes wrong",
+                "details" => $th
+            ];
+            return response()->json($response, 500);
+        }
+    }
+
+
+    // LINK TYPE
+    public function storeLinkType(Request $request)
+    {
+        try {
+            $fields = $request->validate([
+                'constant_number' => 'required',
+                'constant_name' => 'required'
+            ]);
+
+            LinkType::create($fields);
+
+            $response = ["message" => "The link type Was Added Successfully"];
+            return response($response, 201);
+        } catch (\Throwable $exception) {
+            $response = [
+                "message" => "Something goes wrong",
+                "detais" => $exception
+            ];
+            return response($response, 500);
+        }
+    }
+
+    public function indexLinkType()
+    {
+        try {
+            $types = LinkType::all();
+            return response()->json($types, 200);
+        } catch (\Throwable $exception) {
+            $response = [
+                'message' => "something goes wrong",
+                'details' => $exception
+            ];
+            return response()->json($response, 500);
+        }
+    }
+
+    public function showLinkType($id)
+    {
+        try {
+            $type = LinkType::findOrFail($id);
+            return response()->json($type, 200);
+        } catch (\Throwable $exception) {
+            $response = [
+                'message' => 'something goes wrong',
+                'details' => $exception
+            ];
+            return response()->json($response, 500);
+        }
+    }
+
+    public function destroyLinkType($id)
+    {
+        try {
+            LinkType::findOrFail($id)->delete();
+            $response = [
+                'message' => 'The link type was deleted successfully'
             ];
             return response()->json($response, 200);
         } catch (\Throwable $th) {
