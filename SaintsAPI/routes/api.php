@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ConstantController;
+use App\Http\Controllers\UserHistoryActionController;
+use App\Http\Controllers\ApiElementController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -25,11 +27,15 @@ Route::get('/language', [ConstantController::class, 'getAllLanguages']);
 Route::get('/language/{id}', [ConstantController::class, 'showLanguage']);
 Route::delete('/delete/language/{id}', [ConstantController::class, 'destroyLanguage']);
 
+
+
 // MERIT ROUTES
 Route::post('/create/merit', [ConstantController::class, 'storeMerit']);
 Route::get('/merit', [ConstantController::class, 'indexMerit']);
 Route::get('/merit/{id}', [ConstantController::class, 'showMerit']);
 Route::delete('/delete/merit/{id}', [ConstantController::class, 'destroyMerit']);
+
+
 
 // ARTIFACT_TYPE ROUTES
 Route::post('/create/artifact-type', [ConstantController::class, 'storeArtifactType']);
@@ -44,3 +50,27 @@ Route::post('/create/link-type', [ConstantController::class, 'storeLinkType']);
 Route::get('/link-type', [ConstantController::class, 'indexLinkType']);
 Route::get('/link-type/{id}', [ConstantController::class, 'showLinkType']);
 Route::delete('/delete/link-type/{id}', [ConstantController::class, 'destroyLinkType']);
+
+
+
+// ACTION ROUTES
+Route::post('/create/action', [ConstantController::class, 'storeAction']);
+Route::get('/action', [ConstantController::class, 'indexAction']);
+Route::get('/action/{id}', [ConstantController::class, 'showAction']);
+Route::delete('/delete/action/{id}', [ConstantController::class, 'destroyAction']);
+
+
+
+// USER_HISTORY_ACTION ROUTES
+Route::post('/create/user-history-action', [UserHistoryActionController::class, 'store']);
+Route::get('/user-history-action', [UserHistoryActionController::class, 'index']);
+Route::get('/user-history-action/{id}', [UserHistoryActionController::class, 'show']);
+
+
+
+// API_ELEMENT ROUTES
+Route::post('/create/api-element', [ApiElementController::class, 'store']);
+Route::get('/api-element', [ApiElementController::class, 'index']);
+Route::get('/api-element/{id}', [ApiElementController::class, 'show']);
+Route::put('/edit/api-element/{id}', [ApiElementController::class, 'edit']);
+Route::delete('/delete/api-element/{id}', [ApiElementController::class, 'destroy']);

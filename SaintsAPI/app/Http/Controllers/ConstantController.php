@@ -7,6 +7,7 @@ use App\Models\Language;
 use App\Models\Merit;
 use App\Models\ArtifactType;
 use App\Models\LinkType;
+use App\Models\Action;
 use Carbon\Exceptions\Exception;
 
 
@@ -270,6 +271,74 @@ class ConstantController extends Controller
             LinkType::findOrFail($id)->delete();
             $response = [
                 'message' => 'The link type was deleted successfully'
+            ];
+            return response()->json($response, 200);
+        } catch (\Throwable $th) {
+            $response = [
+                "message" => "Something goes wrong",
+                "details" => $th
+            ];
+            return response()->json($response, 500);
+        }
+    }
+
+
+    // ACTION
+    public function storeAction(Request $request)
+    {
+        try {
+            $fields = $request->validate([
+                'constant_number' => 'required',
+                'constant_name' => 'required'
+            ]);
+
+            Action::create($fields);
+
+            $response = ["message" => "The Action Was Added Successfully"];
+            return response($response, 201);
+        } catch (\Throwable $exception) {
+            $response = [
+                "message" => "Something goes wrong",
+                "detais" => $exception
+            ];
+            return response($response, 500);
+        }
+    }
+
+    public function indexAction()
+    {
+        try {
+            $action = Action::all();
+            return response()->json($action, 200);
+        } catch (\Throwable $exception) {
+            $response = [
+                'message' => "something goes wrong",
+                'details' => $exception
+            ];
+            return response()->json($response, 500);
+        }
+    }
+
+    public function showAction($id)
+    {
+        try {
+            $action = Action::findOrFail($id);
+            return response()->json($action, 200);
+        } catch (\Throwable $exception) {
+            $response = [
+                'message' => 'something goes wrong',
+                'details' => $exception
+            ];
+            return response()->json($response, 500);
+        }
+    }
+
+    public function destroyAction($id)
+    {
+        try {
+            Action::findOrFail($id)->delete();
+            $response = [
+                'message' => 'The Action was deleted successfully'
             ];
             return response()->json($response, 200);
         } catch (\Throwable $th) {
