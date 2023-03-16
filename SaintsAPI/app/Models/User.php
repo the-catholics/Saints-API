@@ -21,6 +21,12 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'occupation',
+        'recovery_email',
+        'phone_number',
+        'country',
+        'state_province',
+        'city'
     ];
 
     /**
@@ -42,3 +48,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
+
+
+
+

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ConstantController;
 use App\Http\Controllers\UserHistoryActionController;
 use App\Http\Controllers\ApiElementController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -74,3 +75,10 @@ Route::get('/api-element', [ApiElementController::class, 'index']);
 Route::get('/api-element/{id}', [ApiElementController::class, 'show']);
 Route::put('/edit/api-element/{id}', [ApiElementController::class, 'edit']);
 Route::delete('/delete/api-element/{id}', [ApiElementController::class, 'destroy']);
+
+// USER ROUTES
+Route::post('/create/user', [UserController::class, 'store']);
+// Route::get('/user', [UserController::class, 'index']);
+// Route::get('/user/{id}', [UserController::class, 'show']);
+// Route::put('/edit/user/{id}', [UserController::class, 'edit']);
+// Route::delete('/delete/user/{id}', [UserController::class, 'destroy']);
