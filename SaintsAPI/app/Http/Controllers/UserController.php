@@ -41,35 +41,35 @@ class UserController extends Controller
 
 
 
-    // public function index()
-    // {
-    //     try {
-    //         $apiElements = ApiElement::All();
-    //         return response()->json($apiElements, 200);
-    //     } catch (\Throwable $th) {
-    //         $response = [
-    //             'message' => 'Something goes wrong',
-    //             'details' => $th
-    //         ];
+    public function index()
+    {
+        try {
+            $users = User::All();
+            return response()->json($users, 200);
+        } catch (\Throwable $th) {
+            $response = [
+                'message' => 'Something goes wrong',
+                'details' => $th
+            ];
 
-    //         return response()->json($response, 500);
-    //     }
-    // }
+            return response()->json($response, 500);
+        }
+    }
 
-    // public function show($id)
-    // {
-    //     try {
-    //         $apiElement = ApiElement::FindOrFail($id);
-    //         return response()->json($apiElement, 200);
-    //     } catch (\Throwable $th) {
-    //         $response = [
-    //             'message' => 'Something goes wrong',
-    //             'details' => $th
-    //         ];
+    public function show($id)
+    {
+        try {
+            $user = User::FindOrFail($id);
+            return response()->json($user, 200);
+        } catch (\Throwable $th) {
+            $response = [
+                'message' => 'Something goes wrong',
+                'details' => $th
+            ];
 
-    //         return response()->json($response, 500);
-    //     }
-    // }
+            return response()->json($response, 500);
+        }
+    }
 
     // public function edit(Request $request, $id)
     // {

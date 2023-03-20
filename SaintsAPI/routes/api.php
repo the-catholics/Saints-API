@@ -78,7 +78,7 @@ Route::delete('/delete/api-element/{id}', [ApiElementController::class, 'destroy
 
 // USER ROUTES
 Route::post('/create/user', [UserController::class, 'store']);
-// Route::get('/user', [UserController::class, 'index']);
-// Route::get('/user/{id}', [UserController::class, 'show']);
+Route::get('/user', [UserController::class, 'index']);
+Route::get('/user/{id}', [UserController::class, 'show']);
 // Route::put('/edit/user/{id}', [UserController::class, 'edit']);
 // Route::delete('/delete/user/{id}', [UserController::class, 'destroy']);

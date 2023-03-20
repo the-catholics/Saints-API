@@ -210,3 +210,4 @@ In represents a spoken tradional history about the saint or work
 - ArtifactType Crud
 - LinkType Crud
 - Merit Crud
+- Action Crud

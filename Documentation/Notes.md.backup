@@ -204,8 +204,10 @@ In represents a spoken tradional history about the saint or work
 
 
 
-# Implemented So Far
+## Implemented So Far
 
 - Language Crud
 - ArtifactType Crud
-- LinkTyu
+- LinkType Crud
+- Merit Crud
+- Action Crud
